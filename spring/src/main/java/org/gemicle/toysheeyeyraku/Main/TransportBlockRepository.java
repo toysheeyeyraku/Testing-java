@@ -1,11 +1,10 @@
-package org.spring;
+package org.gemicle.toysheeyeyraku.Main;
 
 import java.util.List;
 
+import org.gemicle.toysheeyeyraku.model.TransportBlock;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
-
-import model.TransportBlock;
 
 public interface TransportBlockRepository extends MongoRepository<TransportBlock, String> {
 

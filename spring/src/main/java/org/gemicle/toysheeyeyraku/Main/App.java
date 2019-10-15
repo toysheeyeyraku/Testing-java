@@ -1,10 +1,12 @@
-package org.spring;
+package org.gemicle.toysheeyeyraku.Main;
 
 import java.sql.Time;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.gemicle.toysheeyeyraku.model.Route;
+import org.gemicle.toysheeyeyraku.model.TransportBlock;
 import org.gemicle.toysheeyeyraku.parsing.GetRozklad;
 import org.gemicle.toysheeyeyraku.parsing.HourTime;
 import org.gemicle.toysheeyeyraku.parsing.Rozklad;
@@ -14,9 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import model.Route;
-import model.TransportBlock;
 
 /**
  * Hello world!
@@ -59,7 +58,7 @@ public class App implements CommandLineRunner
     	Route ans =new Route();
     	ans.name=stops.get(0).StopName+"-"+stops.get(stops.size()-1).StopName;
     	for (Stop st :stops) {
-    		model.Stop mns =new model.Stop();
+    		org.gemicle.toysheeyeyraku.model.Stop mns =new org.gemicle.toysheeyeyraku.model.Stop();
     		mns.name=st.StopName;
     		
     		for (HourTime time : st.chillDay.stopsTime) {

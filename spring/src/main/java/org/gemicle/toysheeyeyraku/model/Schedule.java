@@ -1,4 +1,4 @@
-package model;
+package org.gemicle.toysheeyeyraku.model;
 import java.sql.Time;
 import java.time.*;
 import java.util.ArrayList;

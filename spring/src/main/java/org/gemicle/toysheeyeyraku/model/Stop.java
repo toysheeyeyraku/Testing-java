@@ -1,4 +1,4 @@
-package model;
+package org.gemicle.toysheeyeyraku.model;
 
 public class Stop {
 	public String name;

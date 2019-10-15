@@ -1,4 +1,4 @@
-package model;
+package org.gemicle.toysheeyeyraku.model;
 
 import java.util.ArrayList;
 import java.util.List;
